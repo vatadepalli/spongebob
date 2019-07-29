@@ -1,34 +1,25 @@
-## Install
+# Reactron
 
-First, clone the repo via git:
+#### ReactJS + Electron.
 
-```bash
-git clone --depth 1 --single-branch --branch master https://github.com/electron-react-boilerplate/electron-react-boilerplate.git your-project-name
-```
+- A simple setup that uses Webpack and Babel.
+- To quickly create native apps for MacOS, Windows & Linux.
+- Integrate it with Python or any other code to build a modern UX for your projects.
 
-And then install the dependencies with yarn.
+## Available Scripts
 
-```bash
-$ cd your-project-name
-$ yarn
-```
+> yarn build
 
-## Starting Development
+Builds your project using webpack and babel, into app folder.
 
-Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
+> yarn package
 
-```bash
-$ yarn dev
-```
+"yarn build" && uses electron-builder to build .dmg for your app.
 
-## Packaging for Production
+> yarn electron
 
-To package apps for the local platform:
+Use this in dev to view your app using electron. Need to build your app first.
 
-```bash
-$ yarn package
-```
+> yarn dev
 
-## Docs
-
-See [docs and guides here](https://electron-react-boilerplate.js.org/docs/installation)
+Your development server for react. Opens your react app in a browser, where you can work on the user interface.
