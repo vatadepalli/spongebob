@@ -1,10 +1,9 @@
-# Reactron
+# Spongebob
 
-#### ReactJS + Electron.
+#### Built on Reactron
 
-- A simple setup that uses Webpack and Babel.
-- To quickly create native apps for MacOS, Windows & Linux.
-- Integrate it with Python or any other code to build a modern UX for your projects.
+- A MacOS desktop app that accepts articles in markdown & generates static react files.
+- These static react files are then deployed to an AWS S3 bucket using Travis CI.
 
 ## Available Scripts
 
