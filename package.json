@@ -6,12 +6,12 @@
   "scripts": {
     "build": "webpack --mode production",
     "package": "yarn build && node_modules/.bin/electron-builder .",
-    "postinstall": "electron-builder install-app-deps",
-    "electron": "electron . --NODE_ENV=dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --hot",
+    "electron-dev": "concurrently \"webpack-dev-server --hot\" \"wait-on http://localhost:8080 && electron .\"",
     "start": "NODE_ENV=dev nodemon --watch ./src/**/* --watch . --exec 'yarn electron'",
-    "electron-dev": "concurrently \"BROWSER=none yarn build\" \"yarn dev\" \"wait-on http://localhost:8080 && electron .\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "electron-builder install-app-deps",
+    "electron": "electron ."
   },
   "keywords": [],
   "author": "",
@@ -43,6 +43,7 @@
     "nodemon": "^1.19.1",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
+    "react-desktop": "^0.3.9",
     "react-dom": "^16.8.6",
     "react-filetree-electron": "^1.2.2",
     "react-markdown": "^4.1.0",
