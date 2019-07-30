@@ -9,12 +9,20 @@ let mainWindow;
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    show: false,
+    hasShadow: true,
+    width: 1280,
+    height: 800,
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
     }
   });
+
+  mainWindow.webContents.on("did-finish-load", function() {
+    mainWindow.show();
+  });
+
+  // mainWindow.loadFile("src/index.html");
 
   // and load the index.html of the app.
   mainWindow.loadFile("app/index.html");

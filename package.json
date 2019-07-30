@@ -7,9 +7,10 @@
     "build": "webpack --mode production",
     "package": "yarn build && node_modules/.bin/electron-builder .",
     "postinstall": "electron-builder install-app-deps",
-    "electron": "electron .",
+    "electron": "electron . --NODE_ENV=dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "start": "NODE_ENV=dev nodemon --watch ./src/**/* --watch . --exec 'yarn electron'"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,11 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron-reload": "^1.4.1",
+    "jquery": "^3.4.1",
+    "nodemon": "^1.19.1",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

@@ -1,0 +1,11 @@
+// Your variable overrides
+
+// Option A: Include all of Bootstrap
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-theme {
+  color: #fff;
+  background-color: rgb(59, 154, 135);
+  border-color: rgb(59, 154, 135);
+}
