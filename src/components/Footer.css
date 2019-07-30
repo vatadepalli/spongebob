@@ -1,0 +1,8 @@
+.FooterText {
+  margin: auto; /* Important */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 80%;
+  padding: 1px;
+}

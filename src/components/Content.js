@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Browser from "./content/Browser";
-import MDArea from "./content/MDArea";
-import TextArea from "./content/TextArea";
+import Panes from "./content/Panes";
+
+import "./Content.css";
 
 export default class Content extends Component {
   render() {
@@ -10,11 +11,8 @@ export default class Content extends Component {
         <div className="Browser">
           <Browser />
         </div>
-        <div className="MDArea">
-          <MDArea />
-        </div>
-        <div className="TextArea">
-          <TextArea />
+        <div className="Panes">
+          <Panes />
         </div>
       </div>
     );

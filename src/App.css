@@ -1,3 +1,4 @@
+/* Super */
 .App {
   display: flex;
   flex-direction: column;
@@ -5,6 +6,7 @@
   background-color: rgb(59, 154, 135);
 }
 
+/* General  */
 .btn-sm {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -15,87 +17,18 @@
   user-select: none;
 }
 
-.Content {
-  flex-grow: 1;
-}
-
+/* Layout  */
 .Header {
   text-align: center;
   background-color: rgb(51, 51, 51);
   display: flex;
   justify-content: flex-end;
 }
+.Content {
+  flex-grow: 1;
+}
 
 .Footer {
   text-align: center;
   background-color: rgb(59, 154, 135);
-}
-
-.ContentInner {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  flex-wrap: nowrap;
-  align-items: stretch;
-}
-
-.Browser {
-  flex: 1;
-  min-width: 200px;
-  max-width: 250px;
-  background-color: rgb(37, 37, 37);
-}
-
-.MDArea {
-  flex: 2;
-  background-color: rgb(30, 30, 30);
-  border-right: 1px solid rgb(63, 61, 61);
-}
-
-.TextArea {
-  flex: 2;
-  background-color: rgb(30, 30, 30);
-}
-
-.HeaderInner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
-.HeaderLeft {
-  flex: 1;
-  justify-content: flex-start;
-}
-
-.HeaderCenter {
-  flex: 1;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  /* font-size: 40px; */
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.HeaderRight {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.HeaderCenterText {
-  margin: auto; /* Important */
-  text-align: center;
-  color: rgb(59, 154, 135);
-}
-
-.FooterText {
-  margin: auto; /* Important */
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  font-size: 80%;
-  padding: 1px;
 }

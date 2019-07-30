@@ -1,0 +1,42 @@
+.HeaderInner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.HeaderLeft {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.HeaderCenter {
+  flex: 1;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  /* font-size: 40px; */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.HeaderRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.HeaderCenterText {
+  margin: auto; /* Important */
+  text-align: center;
+  color: rgb(59, 154, 135);
+}
+
+.BrowserHeadText {
+  margin: auto; /* Important */
+  text-align: center;
+  color: rgb(59, 154, 135);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 90%;
+  padding: 1px;
+}

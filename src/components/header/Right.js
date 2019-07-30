@@ -13,7 +13,7 @@ export default class Right extends Component {
           Publish <i className="fas fa-upload ml-1" />
         </button>
         <button className="btn-sm btn-theme mr-1">
-          <i class="fas fa-cog" />
+          <i className="fas fa-cog" />
         </button>
       </div>
     );

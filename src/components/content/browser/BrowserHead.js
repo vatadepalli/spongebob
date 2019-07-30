@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-export default class MDArea extends Component {
+export default class BrowserHead extends Component {
   render() {
     return (
       <div>
-        <h4>Md Area</h4>
+        <p className="BrowserHeadText">Browser</p>
       </div>
     );
   }

@@ -1,0 +1,19 @@
+.Browser {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: rgb(37, 37, 37);
+}
+
+.Panes {
+  flex: 2;
+  background-color: rgb(30, 30, 30);
+}
+
+.ContentInner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}

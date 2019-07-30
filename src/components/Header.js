@@ -4,6 +4,8 @@ import Left from "./header/Left";
 import Center from "./header/Center";
 import Right from "./header/Right";
 
+import "./Header.css";
+
 export default class Header extends Component {
   render() {
     return (

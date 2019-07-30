@@ -29,7 +29,11 @@ module.exports = {
       {
         test: /\.css/,
         loaders: ["style-loader", "css-loader"],
-        include: __dirname + "/src/"
+        include: [
+          __dirname + "/src/",
+          __dirname + "/node_modules/codemirror/theme/monokai.css",
+          __dirname + "/node_modules/codemirror/lib/codemirror.css"
+        ]
       }
     ]
   },
