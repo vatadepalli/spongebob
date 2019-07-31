@@ -9,6 +9,7 @@ module.exports = (env, argv) => {
     entry: {
       main: "./src/index.js"
     },
+    target: "electron-renderer",
     output: {
       path: path.resolve(__dirname, "app"),
       filename: "index.js"

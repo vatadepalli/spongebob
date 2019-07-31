@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 
+import * as fs from "fs";
+
 class App extends Component {
   constructor() {
     super();
@@ -13,6 +15,9 @@ class App extends Component {
   }
 
   render() {
+    fs.readdirSync("/").forEach(file => {
+      console.log(file);
+    });
     return (
       <div className="App">
         <div className="Header">
