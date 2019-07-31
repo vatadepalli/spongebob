@@ -7,8 +7,8 @@
     "start": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "package": "yarn build && node_modules/.bin/electron-builder .",
-    "dev": "webpack-dev-server --mode development --hot",
-    "electron-dev": "concurrently \"webpack-dev-server --hot\" \"wait-on http://localhost:8080 && electron .\"",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "electron-dev": "concurrently \"webpack-dev-server --hot\" \"wait-on http://localhost:3001 && electron .\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "electron-builder install-app-deps",
     "electron": "electron ."
