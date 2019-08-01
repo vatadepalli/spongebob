@@ -42,7 +42,6 @@
     "@skidding/react-codemirror": "^1.0.2",
     "bootstrap": "^4.3.1",
     "electron-reload": "^1.4.1",
-    "fs": "0.0.1-security",
     "jquery": "^3.4.1",
     "nodemon": "^1.19.1",
     "popper.js": "^1.15.0",
@@ -51,7 +50,6 @@
     "react-dom": "^16.8.6",
     "react-filetree-electron": "^1.2.2",
     "react-markdown": "^4.1.0",
-    "react-panelgroup": "^1.0.7",
     "react-split-pane": "^0.1.87"
   },
   "build": {
