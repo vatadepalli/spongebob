@@ -42,7 +42,7 @@
     "@skidding/react-codemirror": "^1.0.2",
     "bootstrap": "^4.3.1",
     "electron-reload": "^1.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nodemon": "^1.19.1",
     "popper.js": "^1.15.0",
     "react": "^16.8.6",
